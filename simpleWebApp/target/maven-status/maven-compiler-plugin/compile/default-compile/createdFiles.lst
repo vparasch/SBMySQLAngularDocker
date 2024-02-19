@@ -1,0 +1,9 @@
+com\example\simpleWebApp\service\AdressessService.class
+com\example\simpleWebApp\entity\User.class
+com\example\simpleWebApp\service\UserService.class
+com\example\simpleWebApp\entity\Adresses.class
+com\example\simpleWebApp\enums\Gender.class
+com\example\simpleWebApp\repository\UserRepository.class
+com\example\simpleWebApp\repository\AdressessRepository.class
+com\example\simpleWebApp\SimpleWebAppApplication.class
+com\example\simpleWebApp\controller\UserController.class

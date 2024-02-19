@@ -1,0 +1,29 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h3 class="text-center">Display User Details</h3>
+        <div class="d-flex flex-column align-items-center">
+            <div>
+                <div>
+                    <label> <b>Name:</b></label> {{user.name}}
+                </div>
+                <div>
+                    <label> <b>Surname:</b></label> {{user.surname}}
+                </div>
+                <div>
+                    <label> <b>Gender:</b></label> {{user.gender}}
+                </div>
+                <div>
+                    <label> <b>Birthdate:</b></label> {{user.birthdate}}
+                </div>
+                <div>
+                    <label> <b>Work Address:</b></label> {{user.addresses.workAddress}}
+                </div>
+                <div>
+                    <label> <b>Home Address:</b></label> {{user.addresses.homeAddress}}
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>

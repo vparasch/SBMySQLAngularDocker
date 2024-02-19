@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+  
+.home-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.user-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 50px; 
+}
+
+.user-list-table {
+  width: 80%;
+  max-width: 800px; 
+  margin-top: 50px;
+}
+
+.user-list-title {
+  margin-bottom: 20px; 
+}
+  
+::ng-deep .form-control::placeholder {
+  color: #999; /* Adjust the color code to your desired lighter shade */
+}

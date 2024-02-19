@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  database:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: bill
+      MYSQL_DATABASE: springboot_db
+      MYSQL_USER: bill_par
+      MYSQL_PASSWORD: bill
+    volumes:
+    - databaseData:/var/lib/mysql
+    
+  spring-boot-app:
+    depends_on:
+      - database
+    build:
+      context: ./simpleWebApp
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: on-failure
+
+  angular-front-end:
+    depends_on:
+      - spring-boot-app
+    build:
+      context: ./sb_app
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    
+volumes:
+  databaseData:
